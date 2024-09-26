@@ -3,6 +3,6 @@ suf="$1"
 #     f="$($i)"
 #     echo "$f"
 for i in "${@:2}"; do
-    cp "./$i" "./$i$suf"
+    mv "./$i" "./$i$suf"
 done
 
